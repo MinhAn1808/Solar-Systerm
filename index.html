@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Systerm</title>
+    <link rel="stylesheet" href="lightbox2-2.11.5/lightbox2-2.11.5/dist/css/lightbox.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="displayRandom()">
+    <main>
+        <div id="main-screen">
+            <img src="img/backgound.jpg" alt="Select the planet" id="miniScreen" title="Select the planet" >
+            <div id="sun">
+            </div>
+            <div id="struc-mercury">
+                <div id="mercury"></div>
+            </div>
+            <div id="struc-venus">
+                <div id="venus"></div>
+            </div>
+            <div id="struc-earth">
+                <div id="earth"></div>
+            </div>
+            <div id="struc-mars">
+                <div id="mars"></div>
+            </div>
+            <div id="struc-jupiter">
+                <div id="jupiter"></div>
+            </div>
+            <div id="struc-saturn">
+                <div id="saturn"></div>
+                <div id="saturnCircle"></div>
+            </div>
+            <div id="struc-uranus">
+                <div id="uranus"></div>
+            </div>
+
+
+
+        </div>
+
+        <div id="main-info">
+            <h1>Click →</h1>
+            <div class="column">
+                <div class="infoElement">
+                    <a href="img/mercury.jpg" data-lightbox="imgs" data-title="Mercury" tabindex="1" onfocus="displayScreen('mercury.jpg')">
+                        <img src="img/mercury.jpg" alt="This is Mercury" onmouseover="displayScreen('mercury.jpg')" onmouseout="mouseOver()">
+                        <h1>Mercury</h1>
+                    </a>
+                </div>
+                <div class="infoElement">
+                    <a href="img/venus.png" data-lightbox="imgs" data-title="Venus" onmouseover="displayScreen('venus.png')" onmouseout="mouseOver()"  tabindex="2" onfocus="displayScreen('venus.png')">
+                        <img src="img/venus.png" alt="This is Venus" >
+                        <h1>Venus</h1>
+                    </a>
+                </div>
+                <div class="infoElement">
+                    <a href="img/earth.jpg" data-lightbox="imgs" data-title="Earth" onmouseover="displayScreen('earth.jpg')" onmouseout="mouseOver()"  tabindex="3" onfocus="displayScreen('earth.jpg')">
+                        <img src="img/earth.jpg" alt="This is Earth">
+                        <h1>Earth</h1>
+                    </a>
+                </div>
+                <div id="semiScreen">
+                    <h1 id="textScreen">Select your planet</h1>
+                </div>
+            </div>
+            <div class="column">
+                <div class="infoElement">
+                    <a href="img/mars.jpg" data-lightbox="imgs" data-title="Mars" onmouseover="displayScreen('mars.jpg')" onmouseout="mouseOver()"  tabindex="4" onfocus="displayScreen('mars.jpg')">
+                        <img src="img/mars.jpg" alt="This is Mars">
+                        <h1>Mars</h1>
+                    </a>
+                </div>
+                <div class="infoElement">
+                    <a href="img/jupiter.jpg" data-lightbox="imgs" data-title="Jupiter" onmouseover="displayScreen('jupiter.jpg')" onmouseout="mouseOver()"  tabindex="5" onfocus="displayScreen('jupiter.jpg')">
+                        <img src="img/jupiter.jpg" alt="This is Jupiter">
+                        <h1>Jupiter</h1>
+                    </a>
+                </div>
+                <div class="infoElement">
+                    <a href="img/saturn.jpg" data-lightbox="imgs" data-title="Saturn" onmouseover="displayScreen('saturn.jpg')" onmouseout="mouseOver()"  tabindex="6" onfocus="displayScreen('saturn.jpg')">
+                        <img src="img/saturn.jpg" alt="This is Saturn">
+                        <h1>Saturn</h1>
+                    </a>
+                </div>
+                <div class="infoElement">
+                    <a href="img/uranus.jpg" data-lightbox="imgs" data-title="Uranus" onmouseover="displayScreen('uranus.jpg')" onmouseout="mouseOver()"  tabindex="7" onfocus="displayScreen('uranus.jpg')">
+                        <img src="img/uranus.jpg" alt="This is Uranus">
+                        <h1>Uranus</h1>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <script src="scrip.js"></script>
+    <script src="lightbox2-2.11.5/lightbox2-2.11.5/dist/js/lightbox-plus-jquery.js"></script>
+</body>
+
+</html>
